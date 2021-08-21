@@ -1,7 +1,7 @@
 This is a header-only generic implementation of the A\* pathfinding algorithm in C++17. The only function that must be used is the fastAstar, with the following parameters:
 1. start of type State.
 2. goal of type State.
-3. nextNodesLambda of type State ->Container<State>.
+3. nextNodesLambda of type State ->Container\<State\>.
 4. heuristicLambda of type State\*State -> float.
 5. edgeCostLambda of type State\*State -> float.
 
