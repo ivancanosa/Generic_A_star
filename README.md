@@ -6,7 +6,7 @@ This is a header-only generic implementation of the A\* pathfinding algorithm in
 5. edgeCostLambda of type State\*State -> float.
 
 Additionaly, the type State must have a hash function and == operator inside the std namespace.
-The function is thread-safe and doesn't free the memory that uses on its operation, so future calls doesn't have to use much mallocs. This feature makes it specially useful inside the game loop of a videogame, because it will be called continuosly. 
+The function fastAstar is thread-safe and doesn't free the memory that uses on its operation, so future calls doesn't have to use much mallocs. This feature makes it specially useful inside the game loop of a videogame, because it will be called continuosly. 
 In the file main.cpp there is an example of use for a grid enviroment.
 
 ## TODO:
