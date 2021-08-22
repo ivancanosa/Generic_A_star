@@ -1,4 +1,4 @@
-This is a header-only generic implementation of the A\* pathfinding algorithm in C++17. The only function that should be called is "fastAStar" in the file "astar.h", with the following parameters:
+This is a header-only generic implementation of the A\* search algorithm in C++17. The only function that should be called is "fastAStar" in the file "astar.h", with the following parameters:
 1. start of type State.
 2. goal of type State.
 3. nextNodesLambda of type State ->Container\<State\>.
