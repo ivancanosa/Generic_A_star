@@ -1,12 +1,19 @@
-main: main.cpp
-	clang++ -g -O3 -lprofiler -stdlib=libc++ -std=c++17 main.cpp -o main
+8puzzle: examples/8puzzle.cpp
+	clang++ -g -O3 -lprofiler -stdlib=libc++ -std=c++17 examples/8puzzle.cpp -o 8puzzle
 
-prof: main
-	CPUPROFILE=prof.out ./main
-	pprof --gif main prof.out > output.gif && xdg-open output.gif
+knight: examples/knight.cpp
+	clang++ -g -O3 -lprofiler -stdlib=libc++ -std=c++17 examples/knight.cpp -o knight
+
+grid: examples/grid.cpp
+	clang++ -g -O3 -lprofiler -stdlib=libc++ -std=c++17 examples/grid.cpp -o grid
+
+
+prof: grid
+	CPUPROFILE=prof.out ./grid
+	pprof --gif grid prof.out > output.gif && xdg-open output.gif
 
 clean:
-	rm main
+	rm -f 8puzzle knight grid prof.out output.gif
 
-run: main
-	./main
+run: 8puzzle
+	./8puzzle

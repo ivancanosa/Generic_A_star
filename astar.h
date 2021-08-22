@@ -64,6 +64,7 @@ std::vector<State> innerAstar(State start, State goal, NextLambda nextNodesLambd
 		}
 	}
 
+	//std::cout << "Expanded nodes: " << reserved.expanded.size() << std::endl;
 	return {}; //There is no path
 }
 
