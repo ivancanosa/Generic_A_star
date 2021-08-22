@@ -46,7 +46,7 @@ void testAStar(){
 	std::tuple<int, int> start{1, 1};
 	std::tuple<int, int> goal{width-3, height-3};
 
-	//Execute the same path 1000 times to test efficiency over multiple calls
+	//Execute the algorithm 1000 times to test efficiency over multiple calls
 	for(int i=0; i<1000; i++){
 		auto path = gridPathfinding(mesh, width, height, start, goal); 
 	}
