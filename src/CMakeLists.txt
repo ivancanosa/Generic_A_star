@@ -13,6 +13,7 @@ target_include_directories(astar INTERFACE
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
     "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )
+add_library(astar::astar ALIAS astar)
 
 # Install the target
 install(TARGETS astar
